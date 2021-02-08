@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matiere: one
+  valeur: 
+  evaluation: one
+  user: one
+  commentaire: MyText
+
+two:
+  matiere: two
+  valeur: 
+  evaluation: two
+  user: two
+  commentaire: MyText
