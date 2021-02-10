@@ -1,2 +1,336 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!--Hero-->
+        <section id="hero" class="hero is-medium">
+            <%= render "layouts/nav" %>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <h1 class="title">Notre Etablissement</h1>
+                            <p class="has-text-centered-mobile">
+                                Finetech School, est l’une des meilleures schools d’Afrique francophone.  Nous sommes leader en matière de recherche et d’enseignement. Nous proposons une gamme de programmes adaptée à l’exigence des parents d'élèves et de participants sélectionnés parmi les meilleurs talents d’aujourd’hui.
+
+                            </p>
+                            <hr class="rounded">
+                            <div class="is-divider" data-content="   "></div>
+
+                            <p class="subtitle is-3" style="margin-top: 20px;">
+                                Nos activités
+                            </p>
+                            <p class="has-text-centered-mobile">
+                                <i class="fa fa-check" aria-hidden="true" style="color: #72ddf7;"></i>
+                                Maternelle ( PETITE ET GRANDE SECTION)
+                            </p>
+                            <p class="has-text-centered-mobile">
+                                <i class="fa fa-check" aria-hidden="true" style="color: #72ddf7;"></i>
+                                PRIMAIRE
+                            </p>
+                            <p class="has-text-centered-mobile">
+                                <i class="fa fa-check" aria-hidden="true" style="color: #72ddf7;"></i>
+                                SECONDAIRE 
+                            </p>
+                            <p class="has-text-centered-mobile">
+                                <i class="fa fa-check" aria-hidden="true" style="color: #72ddf7;"></i>
+                                COURS DE RENFORCEMENT
+                            </p>
+                            <p class="has-text-centered-mobile">
+                                <i class="fa fa-check" aria-hidden="true" style="color: #72ddf7;"></i>
+                                COURS DE VACANCE
+                            </p>
+                            <button id="learnbtn" type="button" class="button is-size-6 is-rounded " style="margin-top: 15px;">
+                                Voir plus
+                            </button>
+                        </div>
+
+                        <div class="column">
+                            <%= image_tag "school1.svg" %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="users-feed" class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="is-64x64" \>
+                                        <%= image_tag "man-user-person-male-profile-avatar-icon.svg" %>
+
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Some Name</strong> <small>@somename</small>
+                                            <br>
+                                            Pellentesque nec nam aliquam sem et tortor.Tristique et egestas quis ipsum suspendisse.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="is-64x64" \>
+                                        <%= image_tag "female-user-girl-person-glasses-avatar-icon.svg" %>
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Some Name</strong> <small>@somename</small>
+                                            <br>
+                                            Libero id faucibus nisl tincidunt eget. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="sectionf">
+            <div class="container">
+                <div class="columns reverse-row-order">
+                    <div class="column">
+                        <h1 class="title">Step one</h1>
+                        <p class="has-text-black paragraph">
+                            Scelerisque fermentum dui faucibus in ornare quam viverra orci. Ultricies mi quis hendrerit dolor. Aliquet lectus proin nibh nisl condimentum. Sit amet dictum sit amet justo donec. Iaculis eu non diam phasellus vestibulum lorem.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <%= image_tag "school2.svg",  style: "width: 70%;" %>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="columns reverse-row-order">
+                    <div class="column">
+                        <%= image_tag "school3.svg",  style: "width: 50%;" %>
+
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Step two</h1>
+                        <p class="has-text-black paragraph">
+                            Scelerisque fermentum dui faucibus in ornare quam viverra orci. Ultricies mi quis hendrerit dolor. Aliquet lectus proin nibh nisl condimentum. Sit amet dictum sit amet justo donec. Iaculis eu non diam phasellus vestibulum lorem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="columns reverse-row-order">
+                    <div class="column">
+                        <h1 class="title">Step three</h1>
+                        <p class="has-text-black paragraph">
+                            Scelerisque fermentum dui faucibus in ornare quam viverra orci. Ultricies mi quis hendrerit dolor. Aliquet lectus proin nibh nisl condimentum. Sit amet dictum sit amet justo donec. Iaculis eu non diam phasellus vestibulum lorem.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <%= image_tag "school4.svg",  style: "width: 50%;" %>
+
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="columns reverse-row-order">
+                    <div class="column">
+                        <%= image_tag "school5.svg",  style: "width: 70%;" %>
+
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Step four</h1>
+                        <p class="has-text-black paragraph">
+                            Scelerisque fermentum dui faucibus in ornare quam viverra orci. Ultricies mi quis hendrerit dolor. Aliquet lectus proin nibh nisl condimentum. Sit amet dictum sit amet justo donec. Iaculis eu non diam phasellus vestibulum lorem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="hero" id="hotel-gallery" style="margin-top: 6rem;margin-bottom: 3rem;">
+            <div class="hero-body is-paddingless">
+                <div class="container" style="overflow:hidden;">
+                    <div class="content">
+                        <h1 class="title has-text-centered">La galerie</h1>
+                    </div>
+                    <section class="section is-paddingless">
+                        <div id="slider">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-16by9 is-covered">
+                                        <img src="https://lepetitjournal.com/sites/default/files/styles/main_article/public/2018-01/E%CC%81coles-franc%CC%A7aises.jpg?itok=kZYAVNiE" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Mon titre 1
+                                    </div>
+                                    <div class="item__description">
+                                        Ici une petite description pour tester le slider
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-16by9 is-covered">
+                                        <img src="https://www.humanium.org/fr/wp-content/uploads/2015/09/Ecole-termin%C3%A9e-et-inauguration-25.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Mon titre 2
+                                    </div>
+                                    <div class="item__description">
+                                        Ici une petite description pour tester le slider
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-16by9 is-covered">
+                                        <img src="https://i0.wp.com/opportunite.africa/wp-content/uploads/2020/06/artuz_fighting_for_rural_teachers.jpg?fit=1024%2C578&ssl=1" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Mon titre 3
+                                    </div>
+                                    <div class="item__description">
+                                        Ici une petite description pour tester le slider
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-16by9 is-covered">
+                                        <img src="https://i2.wp.com/offremplois.com/wp-content/uploads/2020/06/Africa-Design-School-Design-Num%C3%A9rique-BAchelor-Formation-Irawotalents.png?ssl=1" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Mon titre 4
+                                    </div>
+                                    <div class="item__description">
+                                        Ici une petite description pour tester le slider
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-16by9 is-covered">
+                                        <img src="https://www.plataformamedia.com/wp-content/uploads/2020/08/cabo-verde-escolas-lusa-1140x694.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Mon titre 5
+                                    </div>
+                                    <div class="item__description">
+                                        Ici une petite description pour tester le slider
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h3 class="is-size-3 has-text-centered">
+                    <strong>Nous contacter</strong>
+                </h3>
+
+                <div class="box">
+                    <div class="columns">
+                        <div class="column">
+                            <%= image_tag "school6.svg",  style: "width: 80%;" %>
+
+                            <p class="has-text-black paragraph has-text-centered" style="padding-top: 10px;">
+                                One of our team members will contact you soon <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
+
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Text input">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="Email input" placeholder="example@gmail.com">
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Subject</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Type subject">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Message</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="Text area"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            I agree to the <a href="#">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <button class="button is-link">Submit</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-link is-light">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>

@@ -1,0 +1,40 @@
+<div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="/">
+                                <%= image_tag "logo.png" %>
+                              </a>
+                            <a class="navbar-item" href="/">
+                                <h3 class="logo has-text-green is-size-4">Finetech School</h3>
+                            </a></div>
+
+                        <div class="navbar-menu">
+
+                            <div class="navbar-end">
+                            
+                                <%= link_to "Accueil", root_path, class: "a-menu is-size-6 navbar-item" %>
+                                <a class="a-menu is-size-6 navbar-item">
+                                    Le directeur
+                                </a>
+                                <a class="a-menu is-size-6 navbar-item">
+                                    L'Ecole
+                                </a>
+                                <a class="a-menu is-size-6 navbar-item">
+                                    contact
+                                </a>
+                                <%if user_signed_in?%>
+                                    <%= link_to "Se déconnecter", destroy_user_session_path, class: "a-menu is-size-6 navbar-item" %>
+                                <% else %>
+                                    <%= link_to "Se connecter", user_session_path, class: "a-menu is-size-6 navbar-item" %>
+                                <% end %>
+                            </div>
+                        </div>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </nav>
+            </div>

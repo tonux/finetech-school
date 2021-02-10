@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FinetechSchool</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -8,11 +12,67 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+    <title>Finetech School</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+
+
+</head>
+
+<body>
+    <!--Wrapper-->
+    <div id="wrapper" class="has-text-centered-mobile">
+        
+        <%= yield %>
+
+        <section id="footer" class="section">
+            <div class="container has-text-centered">
+                <p class="has-text-black is-size-7">
+                    Built with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by restylianos
+                </p>
+                <a href="https://github.com/restylianos" class="is-size-4 social-link">
+                    <i class="fa fa-github" aria-hidden="true" style="color: black;"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100011674968506" class="is-size-4 social-link">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!--script to move to the features section-->
+    <script>
+        $("button").click(function() {
+            $('html,body').animate({
+                    scrollTop: $(".sectionf").offset().top
+                },
+                'slow');
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            bulmaCarousel.attach('#slider', {
+                slidesToScroll: 1,
+                slidesToShow: 3,
+                infinite: true,
+            });
+            let burger = document.querySelector('.burger');
+            let navbar = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                navbar.classList.toggle('is-active');
+            });
+        });
+    </script>
+
+</body>
+
 </html>
