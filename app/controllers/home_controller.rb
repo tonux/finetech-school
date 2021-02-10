@@ -8,8 +8,6 @@ class HomeController < ApplicationController
         redirect_to professeur_index_path
       elsif current_user.eleve?
         redirect_to eleve_index_path
-      else
-        redirect_to root_path
       end
     end
   end
